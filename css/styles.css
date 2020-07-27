@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#logo {
+    padding-left: 10%;
+}
+#logo img {
+    width: 150px;
+}
+#nav-sites {
+    width: 80%;
+    background-color: red;
+    padding: 0 10%;
+}
+ul {
+    margin: 0;
+}
+ul li {
+    list-style: none;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    padding: 15px 45px;
+    
+}
+.active {
+    background-color: #a70000;
+}
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.4s;
+}
+ul li:hover {
+    background-color: white;
+    transition: 0.4s;
+}
+ul li:hover > a {
+    color: red;
+    transition: 0.4s;
+}
+ul li:nth-child(1)::before {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    content: url('../images/home.svg');
+    transition: 0.4s;
+}
+ul li:nth-child(1):hover::before {
+    content: url('../images/home2.svg');
+    transition: 0.4s;
+ }
+ul li:nth-child(2)::before {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    content: url('../images/pizza.svg');
+}
+ul li:nth-child(2):hover::before {
+    content: url('../images/pizza2.svg');
+    transition: 0.4s;
+ }
+ul li:nth-child(3)::before {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    content: url('../images/us.svg');
+}
+ul li:nth-child(3):hover::before {
+    content: url('../images/us2.svg');
+    transition: 0.4s;
+ }
+ul li:nth-child(4)::before {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    content: url('../images/p.svg');
+}
+ul li:nth-child(4):hover::before {
+    content: url('../images/p2.svg');
+    transition: 0.4s;
+ }
+ul li:nth-child(5)::before {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    content: url('../images/contact.svg');
+}
+ul li:nth-child(5):hover::before {
+    content: url('../images/contact2.svg');
+    transition: 0.4s;
+ }
+ #content {
+     padding: 50px 10%;
+ }
+ #content h1 {
+     text-align: center;
+     color: red;
+ }
+ #content p {
+     padding-bottom: 50px;
+     text-align: center;
+ }
+ footer {
+     background-color: red;
+     color: white;
+     text-align: center;
+     width: 100%;
+     height: 50px;
+     line-height: 50px;
+ }
+ table {
+    width: 100%;
+ }
+table, td {
+     border: 1px solid black;
+     border-collapse: collapse;
+     padding: 15px;
+ }
+video {
+    width: 100%;
+}
+ @media only screen and (max-width: 1212px) {
+ ul li {
+     font-size: 12px;
+     padding-right: 10px;
+ }
+ }
+ @media only screen and (max-width: 852px) {
+    ul li {
+        font-size: 12px;
+        width: 100%;
+    }
+    #nav-sites {
+        width: 100%;
+        padding: 0;
+    }
+    ul {
+        padding-inline-start: 0;
+    }
+    }
